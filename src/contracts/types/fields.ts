@@ -17,6 +17,4 @@ export type Active = true | Date;
 export type Created = Date;
 export type Updated = Date;
 export type LastSeen = Date;
-export type Status = 'maybe' | 'attend' | 'not_attend';
 export type Token = string;
-export type Blessing = string;
