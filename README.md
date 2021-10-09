@@ -6,7 +6,7 @@ more docs to come soon =)
 ## install
 
 ```
-npm i backend-common-components
+npm i application-common-components
 ```
 
 ## usage
