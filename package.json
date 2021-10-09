@@ -1,6 +1,6 @@
 {
   "name": "application-common-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common components for frontend & backend micro services",
   "author": "yehonadav",
   "license": "Apache-2.0",
