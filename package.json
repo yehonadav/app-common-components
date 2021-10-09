@@ -1,0 +1,60 @@
+{
+  "name": "app-common-components",
+  "version": "1.0.0",
+  "description": "Common components for frontend & backend micro services",
+  "author": "yehonadav",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/yehonadav/app-common-components.git",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "build:version": "npm run build && npm version patch && npm publish && git push",
+    "update:version": "git add . && git commit -am \"update\" && git push && npm run build:version",
+    "i:update:version": "npm i && npm run update:version"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "tslib": "^2.1.0",
+    "@types/node": "^12.0.0",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "rollup": "^1.32.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-node": "^9.1.1",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/aws-lambda": "^8.10.61",
+    "@types/dotenv-safe": "^8.1.0",
+    "@types/lambda-tester": "^3.6.0",
+    "@types/sinon": "^9.0.0",
+    "@types/supertest": "^2.0.8",
+    "cross-env": "^7.0.2",
+    "fork-ts-checker-webpack-plugin": "^5.0.12",
+    "lambda-tester": "^4.0.1",
+    "nyc": "^15.0.1",
+    "sinon": "^9.0.2",
+    "tslint": "^6.1.2",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-node-externals": "^2.5.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "common",
+    "backent",
+    "components",
+    "serverless",
+    "typescript",
+    "npm"
+  ]
+}

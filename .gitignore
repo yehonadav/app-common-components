@@ -1,0 +1,23 @@
+# package directories
+node_modules
+jspm_packages
+
+.build
+/.build/
+
+.nyc_output
+
+coverage
+
+out-logger.json
+
+.DS_Store
+
+services/common/config
+
+.webpack
+.webpackCache
+.idea
+
+yarn-error.log
+*/yarn-error.log
