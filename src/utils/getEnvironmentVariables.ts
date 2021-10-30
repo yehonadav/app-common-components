@@ -1,4 +1,4 @@
 import {getEnvironmentVariable} from "./getEnvironmentVariable";
 
-export const getEnvironmentVariables = (...names:string[]):string[] =>
+export const getEnvironmentVariables = <T extends string=string>(...names:string[]): T[] =>
   names.map(name => getEnvironmentVariable(name));
