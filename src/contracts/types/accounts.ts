@@ -31,6 +31,7 @@ export type CreateAccountDTO = {
   email: Email;
   role: Role;
 
+  username?:string;
   phone?: Phone;
   passwordHash?: PasswordHash;
   googleId?: GoogleId;
@@ -56,6 +57,7 @@ export type AccountDTO = {
   email: Email;
   phone: Phone;
   passwordHash?: PasswordHash;
+  username?:string;
 
   // external logins
   googleId?: GoogleId;
